@@ -1,12 +1,17 @@
 <div align="center">
 
 <!-- Animated Header -->
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0f0c29,50:302b63,100:24243e&height=200&section=header&text=Shreyash%20Shukla&fontSize=55&fontColor=ffffff&fontAlignY=38&desc=Full-Stack%20Developer%20%7C%20CP%20Enthusiast%20%7C%20Problem%20Solver&descAlignY=58&descSize=18&animation=fadeIn" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=venom&color=0:0f0c29,50:302b63,100:24243e&height=220&section=header&text=Shreyash%20Shukla&fontSize=60&fontColor=ffffff&fontAlignY=45&stroke=7B61FF&strokeWidth=2&animation=fadeIn" width="100%"/>
 
-<!-- Typing Animation -->
+<!-- Techy terminal-style typing -->
 <a href="https://git.io/typing-svg">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=7B61FF&center=true&vCenter=true&width=600&lines=Building+things+that+matter+%F0%9F%9A%80;MERN+Stack+%7C+Python+%7C+C%2B%2B;200%2B+DSA+Problems+Solved+%F0%9F%A7%A0;Hackathon+Champion+%F0%9F%8F%86;PDPU+CSE+%7C+CGPA+9.68+%E2%AD%90" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Share+Tech+Mono&weight=700&size=26&pause=1200&color=00FF9C&background=0D111700&center=true&vCenter=true&width=720&height=60&lines=%3E+Initializing+Shreyash.exe...;%3E+Loading+MERN+Stack+%5B%23%23%23%23%23%23%23%23%23%23%5D+100%25;%3E+DSA+problems+solved%3A+200%2B+%E2%9C%94;%3E+Hackathon+wins%3A+2+%F0%9F%8F%86;%3E+CGPA%3A+9.68+%2F+10.0+%E2%AD%90;%3E+Status%3A+Building+cool+stuff..._" alt="Typing SVG" />
 </a>
+
+<br/>
+
+<!-- Subtitle line -->
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=15&pause=9999&color=7B61FF&center=true&vCenter=true&width=600&lines=Full-Stack+Dev+%7C+CP+Enthusiast+%7C+PDPU+CSE+%2723-27" alt="subtitle" />
 
 <br/>
 
@@ -146,8 +151,13 @@ public:
       <p>Analyzes large-scale network logs to detect anomalies and suspicious patterns, using Pandas for insights and Regex for filtering, with visual traffic trend reports.</p>
     </td>
     <td width="50%">
-      <h3 align="center">🧩 More coming soon...</h3>
-      <p align="center"><i>Always building, always learning.</i></p>
+      <h3 align="center">☁️ Distributed Drive Storage</h3>
+      <p align="center">
+        <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white"/>
+        <img src="https://img.shields.io/badge/Google%20Drive%20API-4285F4?style=flat-square&logo=googledrive&logoColor=white"/>
+        <img src="https://img.shields.io/badge/Fernet-FF6F00?style=flat-square&logo=python&logoColor=white"/>
+      </p>
+      <p>Python CLI that splits files into encrypted chunks and distributes them across multiple Google Drive accounts using OAuth2, parallel uploads, and round-robin chunk distribution.</p>
     </td>
   </tr>
 </table>
