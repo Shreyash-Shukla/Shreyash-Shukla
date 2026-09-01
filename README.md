@@ -34,7 +34,7 @@ class ShreyashShukla {
 public:
     string university  = "Pandit Deendayal Energy University";
     string degree      = "B.Tech — Computer Science & Engineering";
-    float  cgpa        = 9.68;
+    float  cgpa        = 9.72;
     string location    = "Gandhinagar, Gujarat 🇮🇳";
 
     vector<string> currently = {
