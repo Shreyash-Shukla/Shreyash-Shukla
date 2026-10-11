@@ -19,7 +19,7 @@
 [![Portfolio](https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://shreyashshukla.vercel.app/)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/shreyash-shukla-6a3b5a309/)
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Shreyash-Shukla)
-[![LeetCode](https://img.shields.io/badge/LeetCode_Knight-FFA116?style=for-the-badge&logo=leetcode&logoColor=black)](https://leetcode.com/u/shreyash_shukla)
+[![LeetCode Knight](https://img.shields.io/badge/LeetCode-Knight-FFA116?style=for-the-badge&logo=leetcode&logoColor=black)](https://leetcode.com/u/shreyash_shukla)
 [![Codeforces](https://img.shields.io/badge/Codeforces-1F8ACB?style=for-the-badge&logo=codeforces&logoColor=white)](https://codeforces.com/profile/shreyash.ext)
 [![Gmail](https://img.shields.io/badge/shreyash.shukla.dev@gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:shreyash.shukla.dev@gmail.com)
 
