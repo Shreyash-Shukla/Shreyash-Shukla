@@ -1,33 +1,43 @@
 <div align="center">
 
-<!-- Animated Header -->
-<img src="https://capsule-render.vercel.app/api?type=venom&color=0:0f0c29,50:302b63,100:24243e&height=220&section=header&text=Shreyash%20Shukla&fontSize=60&fontColor=ffffff&fontAlignY=45&stroke=7B61FF&strokeWidth=2&animation=fadeIn" width="100%"/>
+<!-- ✨ Animated twinkling header -->
+<img src="https://capsule-render.vercel.app/api?type=venom&color=0:0f0c29,50:302b63,100:24243e&height=240&section=header&text=Shreyash%20Shukla&fontSize=60&fontColor=ffffff&fontAlignY=42&stroke=7B61FF&strokeWidth=2&animation=twinkling&desc=Cloud%20%7C%20AI%20%7C%20Full-Stack&descSize=20&descAlignY=65&descAlign=50" width="100%"/>
 
-<!-- Techy terminal-style typing -->
+<!-- ⌨️ Terminal typing -->
 <a href="https://git.io/typing-svg">
-  <img src="https://readme-typing-svg.demolab.com?font=Share+Tech+Mono&weight=700&size=24&pause=1200&color=00FF9C&background=0D111700&center=true&vCenter=true&width=800&height=60&lines=%3E+Initializing+Shreyash.exe...;%3E+SWE+Intern+%40+Quicko+%F0%9F%9A%80;%3E+1st+Place+HackNUthon+6.0+%7C+2nd+Place+Breach+2025+%F0%9F%8F%86;%3E+LeetCode+Knight+%E2%99%9E+%7C+GATE+Qualified+%E2%9C%94;%3E+CGPA%3A+9.72+%2F+10.0+%E2%AD%90;%3E+Status%3A+Engineering+Cloud+%26+AI+Systems..._" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Share+Tech+Mono&weight=700&size=24&pause=1200&color=00FF9C&background=0D111700&center=true&vCenter=true&width=800&height=60&lines=%3E+Initializing+Shreyash.exe...;%3E+xSWE+Intern+%40+Quicko+%F0%9F%9A%80;%3E+1st+Place+HackNUthon+6.0+%7C+2nd+Place+Breach+2025+%F0%9F%8F%86;%3E+LeetCode+Knight+%E2%99%9E+%7C+GATE+Qualified+%E2%9C%94;%3E+CGPA%3A+9.72+%2F+10.0+%E2%AD%90;%3E+Status%3A+Engineering+Cloud+%26+AI+Systems..._" alt="Typing SVG" />
 </a>
 
 <br/>
 
-<!-- Subtitle line -->
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=15&pause=9999&color=7B61FF&center=true&vCenter=true&width=700&lines=Full-Stack+%26+Cloud+Dev+%7C+AI%2FML+%7C+PDEU+CSE+%2723-27" alt="subtitle" />
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=15&duration=3000&pause=1000&color=7B61FF&center=true&vCenter=true&width=700&lines=Full-Stack+%26+Cloud+Dev;AI%2FML+Engineer+in+the+making;PDEU+CSE+%2723-27;Code+it.+Ship+it.+Improve+it." alt="subtitle" />
 
-<br/>
+<br/><br/>
 
-<!-- Social Badges -->
 [![Portfolio](https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://shreyashshukla.vercel.app/)
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/shreyash-shukla-6a3b5a309/)
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Shreyash-Shukla)
 [![LeetCode Knight](https://img.shields.io/badge/LeetCode-Knight-FFA116?style=for-the-badge&logo=leetcode&logoColor=black)](https://leetcode.com/u/shreyash_shukla)
 [![Codeforces](https://img.shields.io/badge/Codeforces-1F8ACB?style=for-the-badge&logo=codeforces&logoColor=white)](https://codeforces.com/profile/shreyash.ext)
-[![Gmail](https://img.shields.io/badge/shreyash.shukla.dev@gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:shreyash.shukla.dev@gmail.com)
+[![Gmail](https://img.shields.io/badge/Mail_Me-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:shreyash.shukla.dev@gmail.com)
+
+![Profile Views](https://komarev.com/ghpvc/?username=Shreyash-Shukla&color=7B61FF&style=for-the-badge&label=PROFILE+VIEWS)
 
 </div>
 
----
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:7B61FF,100:00FF9C&height=2" width="100%"/>
 
-## 🧠 About Me
+<div align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Share+Tech+Mono&size=22&duration=2500&pause=1500&color=00FF9C&center=true&vCenter=true&width=500&height=45&lines=%24+cat+about.md" alt="about" />
+</div>
+
+```bash
+shreyash@pdeu:~$ whoami
+> Shreyash Shukla — B.Tech CSE '27 @ Pandit Deendayal Energy University
+> CGPA 9.72 / 10.0  |  Gandhinagar, Gujarat 🇮🇳
+> LeetCode Knight ♞  |  GATE Qualified ✔
+> xSWE Intern @ Quicko
+```
 
 ```cpp
 class ShreyashShukla {
@@ -38,7 +48,7 @@ public:
     string location     = "Gandhinagar, Gujarat 🇮🇳";
 
     // Experience & Highlights
-    string experience   = "Software Engineering Intern @ Quicko";
+    string experience   = "xSWE Intern @ Quicko";
     string codingRating = "Knight Badge @ LeetCode";
 
     vector<string> currently = {
@@ -51,17 +61,19 @@ public:
 };
 ```
 
----
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:7B61FF,100:00FF9C&height=2" width="100%"/>
 
-## 💼 Work Experience
+<div align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Share+Tech+Mono&size=22&duration=2500&pause=1500&color=00FF9C&center=true&vCenter=true&width=500&height=45&lines=%24+git+log+--experience" alt="experience" />
+</div>
 
 <div align="center">
 
 <table>
   <tr>
     <td>
-      <h3 align="left">🚀Software Engineering Intern — <a href="https://quicko.com">Quicko</a></h3>
-      <p align="left"><em>May 2026 — June 2026 &nbsp;|&nbsp; Ahmedabad, Gujarat</em></p>
+      <h3 align="left">🚀 Software Engineering Intern — <a href="https://quicko.com">Quicko</a></h3>
+      <p align="left"><em>May 2026 — June 2026 &nbsp;|&nbsp; Ahmedabad, Gujarat</em> &nbsp; <img src="https://img.shields.io/badge/status-shipped_✔-00FF9C?style=flat-square&labelColor=0D1117"/></p>
       <ul>
         <li>Shipped <b>4 production-grade financial tools</b> live on Quicko: <a href="https://quicko.com/tools/verify-pan-details">PAN Verification</a>, <a href="https://quicko.com/tools/check-pan-aadhaar-link-status">PAN-Aadhaar Link Checker</a>, <a href="https://quicko.com/tools/check-tax-payment-status">Tax Payment Checker</a>, and <a href="https://quicko.com/tools/e-verify-itr">e-Verify ITR</a>.</li>
         <li>Architected cloud-native workflows on <b>AWS DynamoDB</b> and high-throughput serverless APIs using <b>TypeScript</b>, <b>Node.js</b>, and <b>AWS Lambda</b> with Middy middleware.</li>
@@ -73,11 +85,16 @@ public:
 
 </div>
 
----
-
-## 🏆 Achievements & Highlights
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:7B61FF,100:00FF9C&height=2" width="100%"/>
 
 <div align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Share+Tech+Mono&size=22&duration=2500&pause=1500&color=00FF9C&center=true&vCenter=true&width=500&height=45&lines=%24+ls+achievements%2F" alt="achievements" />
+
+<br/>
+
+<img src="https://github-profile-trophy.vercel.app/?username=Shreyash-Shukla&theme=tokyonight&no-frame=true&no-bg=true&column=7&margin-w=12&margin-h=12" alt="trophies"/>
+
+<br/>
 
 | 🏅 | Achievement | Highlights |
 |---|---|---|
@@ -90,65 +107,42 @@ public:
 
 </div>
 
----
-
-## ⚡ Tech Stack
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:7B61FF,100:00FF9C&height=2" width="100%"/>
 
 <div align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Share+Tech+Mono&size=22&duration=2500&pause=1500&color=00FF9C&center=true&vCenter=true&width=500&height=45&lines=%24+cat+stack.json" alt="stack" />
 
-**Languages**
+<br/>
 
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![C++](https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white)
-![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white)
-![SQL](https://img.shields.io/badge/SQL-CC292B?style=for-the-badge&logo=sqlite&logoColor=white)
-![C](https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&logo=c&logoColor=black)
+**Languages**<br/>
+<img src="https://skillicons.dev/icons?i=py,ts,js,cpp,java,c,mysql&theme=dark" /><br/><br/>
 
-**Frontend & Backend**
+**Frontend & Backend**<br/>
+<img src="https://skillicons.dev/icons?i=nextjs,react,angular,nodejs,fastapi,express,flask&theme=dark" /><br/><br/>
 
-![Next.js](https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=nextdotjs&logoColor=white)
-![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-![Angular](https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white)
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
-![Express](https://img.shields.io/badge/Express-000000?style=for-the-badge&logo=express&logoColor=white)
-![Flask](https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white)
+**Cloud, DevOps & Databases**<br/>
+<img src="https://skillicons.dev/icons?i=aws,terraform,docker,jenkins,postgres,mongodb,mysql,linux&theme=dark" /><br/><br/>
 
-**Cloud, DevOps & Databases**
-
-![AWS](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazonwebservices&logoColor=white)
-![Terraform](https://img.shields.io/badge/Terraform-844FBA?style=for-the-badge&logo=terraform&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
-![Jenkins](https://img.shields.io/badge/Jenkins-D24939?style=for-the-badge&logo=jenkins&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
-![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
-![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
-
-**AI, Machine Learning & Tools**
-
-![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
-![NumPy](https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white)
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
-![Jest](https://img.shields.io/badge/Jest-C21325?style=for-the-badge&logo=jest&logoColor=white)
-![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)
+**AI, ML & Tools**<br/>
+<img src="https://skillicons.dev/icons?i=pandas,numpy,git,jest,postman&theme=dark" />
 
 </div>
 
----
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:7B61FF,100:00FF9C&height=2" width="100%"/>
 
-## 🚀 Featured Projects
+<div align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Share+Tech+Mono&size=22&duration=2500&pause=1500&color=00FF9C&center=true&vCenter=true&width=500&height=45&lines=%24+ls+projects%2F" alt="projects" />
+</div>
 
 <div align="center">
 
 <table>
   <tr>
-    <td width="50%">
-      <h3 align="center">🛡️ FraudShield — AI Fraud Detection</h3>
+    <td width="50%" valign="top">
+      <img src="https://capsule-render.vercel.app/api?type=rounded&color=0:0f0c29,100:7B61FF&height=90&section=header&text=FraudShield&fontSize=32&fontColor=ffffff&animation=twinkling" width="100%"/>
+      <h3 align="center">🛡️ AI Fraud Detection</h3>
       <p align="center">
-        <b>🏆 1st Place — HackNUthon 6.0 (300+ Teams)</b><br/>
+        <b>🏆 1st Place — HackNUthon 6.0 (300+ Teams)</b><br/><br/>
         <img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white"/>
         <img src="https://img.shields.io/badge/XGBoost-EB392E?style=flat-square&logo=python&logoColor=white"/>
         <img src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white"/>
@@ -156,13 +150,14 @@ public:
       </p>
       <p>Compliance-first transaction fraud detection pipeline combining banking regulatory verification, XGBoost/Random Forest anomaly scoring, Graph Neural Networks (GNNs) for circular transactions, and RAG-based LLM explanations.</p>
       <p align="center">
-        <a href="https://github.com/Shreyash-Shukla/FraudShield"><b>View Repository ↗</b></a>
+        <a href="https://github.com/Shreyash-Shukla/FraudShield"><img src="https://img.shields.io/badge/View_Repository_↗-7B61FF?style=for-the-badge"/></a>
       </p>
     </td>
-    <td width="50%">
-      <h3 align="center">⛓️ TrustChain — Fraud Prevention</h3>
+    <td width="50%" valign="top">
+      <img src="https://capsule-render.vercel.app/api?type=rounded&color=0:0f0c29,100:00FF9C&height=90&section=header&text=TrustChain&fontSize=32&fontColor=ffffff&animation=twinkling" width="100%"/>
+      <h3 align="center">⛓️ Fraud Prevention</h3>
       <p align="center">
-        <b>🥈 2nd Place — Breach 2025</b><br/>
+        <b>🥈 2nd Place — Breach 2025</b><br/><br/>
         <img src="https://img.shields.io/badge/Solidity-363636?style=flat-square&logo=solidity&logoColor=white"/>
         <img src="https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white"/>
         <img src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white"/>
@@ -170,13 +165,14 @@ public:
       </p>
       <p>Multi-layer fraud prevention platform integrating biometric facial authentication (OpenCV, DeepFace), Random Forest transaction classifier trained on Ethereum data, and immutable Solidity smart contracts on blockchain.</p>
       <p align="center">
-        <a href="https://github.com/Shreyash-Shukla/TrustChain"><b>View Repository ↗</b></a>
+        <a href="https://github.com/Shreyash-Shukla/TrustChain"><img src="https://img.shields.io/badge/View_Repository_↗-00FF9C?style=for-the-badge&labelColor=0D1117&color=00FF9C&logoColor=black"/></a>
       </p>
     </td>
   </tr>
   <tr>
-    <td width="50%">
-      <h3 align="center">🤖 DAGent — AI Workflow Orchestration</h3>
+    <td width="50%" valign="top">
+      <img src="https://capsule-render.vercel.app/api?type=rounded&color=0:0f0c29,100:4285F4&height=90&section=header&text=DAGent&fontSize=32&fontColor=ffffff&animation=twinkling" width="100%"/>
+      <h3 align="center">🤖 AI Workflow Orchestration</h3>
       <p align="center">
         <img src="https://img.shields.io/badge/Next.js_14-000000?style=flat-square&logo=nextdotjs&logoColor=white"/>
         <img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white"/>
@@ -185,11 +181,12 @@ public:
       </p>
       <p>Autonomous AI orchestration engine converting natural language requests into parallel executable DAG workflows. Integrates Model Context Protocol (MCP) tools for Google Drive, Gmail, and Contacts with OAuth 2.0.</p>
       <p align="center">
-        <a href="https://github.com/Shreyash-Shukla/DAGent"><b>View Repository ↗</b></a>
+        <a href="https://github.com/Shreyash-Shukla/DAGent"><img src="https://img.shields.io/badge/View_Repository_↗-4285F4?style=for-the-badge"/></a>
       </p>
     </td>
-    <td width="50%">
-      <h3 align="center">☁️ DriveMesh — Distributed Cloud Storage</h3>
+    <td width="50%" valign="top">
+      <img src="https://capsule-render.vercel.app/api?type=rounded&color=0:0f0c29,100:FF6F00&height=90&section=header&text=DriveMesh&fontSize=32&fontColor=ffffff&animation=twinkling" width="100%"/>
+      <h3 align="center">☁️ Distributed Cloud Storage</h3>
       <p align="center">
         <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white"/>
         <img src="https://img.shields.io/badge/Flask-000000?style=flat-square&logo=flask&logoColor=white"/>
@@ -198,7 +195,7 @@ public:
       </p>
       <p>Aggregates multiple Google Drive accounts into unified encrypted storage. Splits files into 5MB blocks encrypted with Fernet and distributes them round-robin via ThreadPoolExecutor with multi-account OAuth 2.0 token refresh.</p>
       <p align="center">
-        <a href="https://github.com/Shreyash-Shukla/DriveMesh"><b>View Repository ↗</b></a>
+        <a href="https://github.com/Shreyash-Shukla/DriveMesh"><img src="https://img.shields.io/badge/View_Repository_↗-FF6F00?style=for-the-badge"/></a>
       </p>
     </td>
   </tr>
@@ -206,24 +203,102 @@ public:
 
 </div>
 
----
+<details>
+<summary><b>⚙️ Under the hood — click to see how these systems flow</b></summary>
 
-## 📊 GitHub Stats
+<br/>
+
+**🛡️ FraudShield pipeline**
+
+```mermaid
+flowchart LR
+    A[💸 Transaction] --> B[🏦 Regulatory<br/>Verification]
+    B --> C[📊 XGBoost / RF<br/>Anomaly Score]
+    C --> D[🕸️ GNN<br/>Circular Tx Detection]
+    D --> E[🧠 RAG LLM<br/>Explanation]
+    E --> F{{✅ Verdict}}
+    style A fill:#0f0c29,stroke:#7B61FF,color:#fff
+    style B fill:#302b63,stroke:#7B61FF,color:#fff
+    style C fill:#302b63,stroke:#7B61FF,color:#fff
+    style D fill:#302b63,stroke:#7B61FF,color:#fff
+    style E fill:#302b63,stroke:#7B61FF,color:#fff
+    style F fill:#00FF9C,stroke:#00FF9C,color:#000
+```
+
+**🤖 DAGent workflow**
+
+```mermaid
+flowchart LR
+    U[🗣️ Natural Language<br/>Request] --> P[🧩 Planner]
+    P --> G{{DAG}}
+    G --> T1[📁 Google Drive<br/>MCP Tool]
+    G --> T2[📧 Gmail<br/>MCP Tool]
+    G --> T3[👤 Contacts<br/>MCP Tool]
+    T1 --> R[✅ Result]
+    T2 --> R
+    T3 --> R
+    style U fill:#0f0c29,stroke:#4285F4,color:#fff
+    style P fill:#302b63,stroke:#4285F4,color:#fff
+    style G fill:#302b63,stroke:#7B61FF,color:#fff
+    style R fill:#00FF9C,stroke:#00FF9C,color:#000
+```
+
+**☁️ DriveMesh storage**
+
+```mermaid
+flowchart LR
+    F[📄 File] --> S[✂️ Split<br/>5MB blocks]
+    S --> E[🔐 Fernet<br/>Encrypt]
+    E --> RR[🔄 Round-robin<br/>ThreadPoolExecutor]
+    RR --> D1[(Drive A)]
+    RR --> D2[(Drive B)]
+    RR --> D3[(Drive C)]
+    style F fill:#0f0c29,stroke:#FF6F00,color:#fff
+    style S fill:#302b63,stroke:#FF6F00,color:#fff
+    style E fill:#302b63,stroke:#FF6F00,color:#fff
+    style RR fill:#302b63,stroke:#7B61FF,color:#fff
+```
+
+</details>
+
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:7B61FF,100:00FF9C&height=2" width="100%"/>
 
 <div align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Share+Tech+Mono&size=22&duration=2500&pause=1500&color=00FF9C&center=true&vCenter=true&width=500&height=45&lines=%24+gh+stats+--live" alt="stats" />
 
-<img src="https://github-readme-stats.vercel.app/api?username=Shreyash-Shukla&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=7B61FF&icon_color=7B61FF" height="165"/>
+<br/>
+
+<img src="https://github-readme-stats.vercel.app/api?username=Shreyash-Shukla&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=7B61FF&icon_color=00FF9C&include_all_commits=true" height="165"/>
 <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Shreyash-Shukla&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=7B61FF" height="165"/>
 
 <br/>
 
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=Shreyash-Shukla&theme=tokyonight&hide_border=true&background=0d1117&stroke=7B61FF&ring=7B61FF&fire=FF6B6B&currStreakLabel=7B61FF" />
+<img src="https://streak-stats.demolab.com/?user=Shreyash-Shukla&theme=tokyonight&hide_border=true&background=0d1117&stroke=7B61FF&ring=7B61FF&fire=FF6B6B&currStreakLabel=00FF9C" />
+
+<br/>
+
+<img src="https://leetcard.jacoblin.cool/shreyash_shukla?theme=dark&font=Share%20Tech%20Mono&ext=heatmap" height="200"/>
+
+<br/><br/>
+
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=Shreyash-Shukla&bg_color=0d1117&color=7B61FF&line=00FF9C&point=FFFFFF&area=true&area_color=7B61FF&hide_border=true&custom_title=Contribution%20Graph" width="100%"/>
+
+<br/>
+
+<!-- 🐍 Needs the snake.yml workflow (see .github/workflows/snake.yml) -->
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Shreyash-Shukla/Shreyash-Shukla/output/github-snake-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Shreyash-Shukla/Shreyash-Shukla/output/github-snake.svg" />
+  <img alt="Contribution snake" src="https://raw.githubusercontent.com/Shreyash-Shukla/Shreyash-Shukla/output/github-snake-dark.svg" />
+</picture>
 
 </div>
 
----
+<img src="https://capsule-render.vercel.app/api?type=rect&color=0:7B61FF,100:00FF9C&height=2" width="100%"/>
 
-## 🌱 Beyond the Code
+<div align="center">
+  <img src="https://readme-typing-svg.demolab.com?font=Share+Tech+Mono&size=22&duration=2500&pause=1500&color=00FF9C&center=true&vCenter=true&width=500&height=45&lines=%24+.%2Fbeyond_the_code.sh" alt="beyond" />
+</div>
 
 ```yaml
 volunteer:
@@ -237,14 +312,10 @@ fun_facts:
   - Coffee → Code → Repeat ☕
 ```
 
----
-
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:24243e,50:302b63,100:0f0c29&height=120&section=footer" width="100%"/>
+<img src="https://readme-typing-svg.demolab.com?font=Share+Tech+Mono&size=18&duration=3500&pause=1500&color=7B61FF&center=true&vCenter=true&width=700&height=50&lines=%22First%2C+solve+the+problem.+Then%2C+write+the+code.%22;Thanks+for+stopping+by+%F0%9F%91%8B+Let's+build+something+cool." alt="quote" />
 
-**"First, solve the problem. Then, write the code."**
-
-![Visitor Count](https://komarev.com/ghpvc/?username=Shreyash-Shukla&color=7B61FF&style=for-the-badge&label=PROFILE+VIEWS)
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:24243e,50:302b63,100:0f0c29&height=140&section=footer&animation=waving" width="100%"/>
 
 </div>
