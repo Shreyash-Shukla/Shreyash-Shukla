@@ -60,7 +60,7 @@ public:
 <table>
   <tr>
     <td>
-      <h3 align="left">🚀 Software Engineering Intern — <a href="https://quicko.com">Quicko</a></h3>
+      <h3 align="left">🚀Ex-Software Engineering Intern — <a href="https://quicko.com">Quicko</a></h3>
       <p align="left"><em>May 2026 — June 2026 &nbsp;|&nbsp; Ahmedabad, Gujarat</em></p>
       <ul>
         <li>Shipped <b>4 production-grade financial tools</b> live on Quicko: <a href="https://quicko.com/tools/verify-pan-details">PAN Verification</a>, <a href="https://quicko.com/tools/check-pan-aadhaar-link-status">PAN-Aadhaar Link Checker</a>, <a href="https://quicko.com/tools/check-tax-payment-status">Tax Payment Checker</a>, and <a href="https://quicko.com/tools/e-verify-itr">e-Verify ITR</a>.</li>
