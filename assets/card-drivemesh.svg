@@ -2,40 +2,54 @@
 <style>
 
 @keyframes replicate {
-  0%, 18% { opacity: 0; transform: translateX(0); }
-  30% { opacity: 1; }
-  80% { opacity: 1; }
-  100% { opacity: 0; transform: translateX(95px); }
+  0%, 16%  { opacity: 0; transform: translateX(0); }
+  26%  { opacity: 1; transform: translateX(0); }
+  55%  { transform: translateX(48px); }
+  82%  { opacity: 1; transform: translateX(94px); }
+  96%  { opacity: 0; transform: translateX(94px); }
+  100% { opacity: 0; transform: translateX(94px); }
 }
-.moving { opacity: 0; animation: replicate 5.5s linear infinite; }
+.moving        { opacity: 0; animation: replicate 5s cubic-bezier(0.77, 0, 0.175, 1) 0.3s infinite; }
+.moving-offset { opacity: 0; animation: replicate 5s cubic-bezier(0.77, 0, 0.175, 1) -2.5s infinite; }
 
+/* Card title reveal: ease-out entrance, 400ms. Marketing budget. */
+@keyframes title-in {
+  0%   { opacity: 0; transform: translateY(8px); }
+  50%  { opacity: 1; transform: translateY(-1px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+.card-title { opacity: 0; animation: title-in 0.4s cubic-bezier(0.23, 1, 0.32, 1) 0.05s forwards; }
+.card-kind  { opacity: 0; animation: title-in 0.4s cubic-bezier(0.23, 1, 0.32, 1) 0.13s forwards; }
 @media (prefers-reduced-motion: reduce) {
   .moving { display: none; }
-  .verify { animation: none; opacity: .88; }
+  .connector { animation: none; stroke-dashoffset: 0; opacity: 0.4; }
+  .card-title, .card-kind { animation: none; opacity: 1; }
 }
 </style>
 <rect width="490" height="250" rx="15" fill="#0b1118"/>
 <rect x="1" y="1" width="488" height="248" rx="14" fill="none" stroke="#2c3a43"/>
 <rect x="23" y="28" width="5" height="18" rx="2.5" fill="#8fd0e8"/>
 <text x="39" y="41" font-size="11" font-weight="700" fill="#8fd0e8">04 / FEATURED PROJECT</text>
-<text x="25" y="98" font-size="28" font-weight="800" fill="#edf4ef">DriveMesh</text>
-<text x="25" y="125" font-size="12" fill="#9baeb0">Encrypted distributed storage</text>
+<text class="card-title" x="25" y="98" font-size="28" font-weight="800" fill="#edf4ef">DriveMesh</text>
+<text class="card-kind" x="25" y="125" font-size="12" fill="#9baeb0">Encrypted distributed storage</text>
 <path d="M25 177 H465" stroke="#2c3a43"/>
 <text x="25" y="209" font-size="11" fill="#8fd0e8">PYTHON  /  FLASK  /  FERNET</text>
 <text x="25" y="230" font-size="11" fill="#9baeb0">OPEN PROJECT ↗</text>
 
-<path d="M319 90 H413 M319 159 H413" stroke="#4a6570" stroke-width="2"/>
+<path d="M319 90 H413 M319 159 H413" stroke="#4a6570" stroke-width="1.5"/>
 <path d="M407 86 L413 90 L407 94 M407 155 L413 159 L407 163"
       fill="none" stroke="#8fd0e8" stroke-width="2"/>
-<circle class="moving" cx="318" cy="90" r="4.5" fill="#8fd0e8"/>
-<circle class="moving" cx="318" cy="159" r="4.5" fill="#8fd0e8" style="animation-delay: -2.75s"/>
+<circle class="moving"        cx="318" cy="90"  r="4.5" fill="#8fd0e8"/>
+<circle class="moving-offset" cx="318" cy="159" r="4.5" fill="#8fd0e8"/>
 <g fill="#0b1118" stroke="#8fd0e8" stroke-width="2">
   <rect x="278" y="105" width="49" height="39" rx="7"/>
-  <rect x="412" y="72" width="45" height="36" rx="7"/>
+  <rect x="412" y="72"  width="45" height="36" rx="7"/>
   <rect x="412" y="141" width="45" height="36" rx="7"/>
 </g>
 <g fill="#8fd0e8" font-size="11" text-anchor="middle">
-  <text x="302" y="129">ENC</text><text x="434" y="95">01</text><text x="434" y="164">02</text>
+  <text x="302" y="129">ENC</text>
+  <text x="434" y="95">01</text>
+  <text x="434" y="164">02</text>
 </g>
 
 </svg>

@@ -1,21 +1,71 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 430" width="1000" height="430" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace"><title>Shreyash Shukla — Software Engineer</title><desc>A self-contained engineering-themed banner with a restrained animated system flow.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 430" width="1000" height="430" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace"><title>Shreyash Shukla — Software Engineer</title><desc>Name reveals with staggered ease-out, cursor blinks, workflow nodes materialise in sequence.</desc>
 
 <style>
-@keyframes send {
-  0% { opacity: 0; transform: translateX(0); }
-  9% { opacity: 1; }
-  88% { opacity: 1; }
+/* Cursor blink — signature animation, step timing is intentional */
+@keyframes blink {
+  0%, 49% { opacity: 1; }
+  50%, 100% { opacity: 0; }
+}
+.cursor { animation: blink 1.1s step-start 0.9s infinite; }
+
+/* Name reveal: ease-out baked into % splits (fast settle at 38%) */
+/* Purpose: preventing jarring appearance. Properties: opacity + translateY. */
+@keyframes reveal-name {
+  0%   { opacity: 0; transform: translateY(18px); }
+  38%  { opacity: 1; transform: translateY(0); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+.name-1  { opacity: 0; animation: reveal-name 0.55s cubic-bezier(0.23, 1, 0.32, 1) 0.15s forwards; }
+.name-2  { opacity: 0; animation: reveal-name 0.55s cubic-bezier(0.23, 1, 0.32, 1) 0.28s forwards; }
+.tagline { opacity: 0; animation: reveal-name 0.50s cubic-bezier(0.23, 1, 0.32, 1) 0.44s forwards; }
+
+/* Node reveal: scale(0.93)+opacity:0 -> scale(1). Never scale(0). */
+/* Stagger 80ms per node. */
+@keyframes node-in {
+  0%   { opacity: 0; transform: scale(0.93); }
+  40%  { opacity: 1; transform: scale(1.02); }
+  65%  { transform: scale(0.99); }
+  100% { opacity: 1; transform: scale(1); }
+}
+.node-1 { opacity: 0; animation: node-in 0.42s cubic-bezier(0.23, 1, 0.32, 1) 0.70s forwards; }
+.node-2 { opacity: 0; animation: node-in 0.42s cubic-bezier(0.23, 1, 0.32, 1) 0.78s forwards; }
+.node-3 { opacity: 0; animation: node-in 0.42s cubic-bezier(0.23, 1, 0.32, 1) 0.86s forwards; }
+.node-4 { opacity: 0; animation: node-in 0.42s cubic-bezier(0.23, 1, 0.32, 1) 0.94s forwards; }
+
+/* Signal: ease-in-out baked as % splits (slow start, fast mid, slow arrival) */
+/* Purpose: state indication — data in transit. Not linear. */
+@keyframes pulse-h {
+  0%   { opacity: 0; transform: translateX(0); }
+  8%   { opacity: 1; transform: translateX(0); }
+  30%  { transform: translateX(55px); }
+  70%  { transform: translateX(165px); }
+  92%  { opacity: 1; transform: translateX(218px); }
   100% { opacity: 0; transform: translateX(218px); }
 }
-@keyframes store {
-  0%, 28% { opacity: 0; transform: translateY(0); }
-  36%, 82% { opacity: 1; }
+@keyframes pulse-v {
+  0%, 26% { opacity: 0; transform: translateY(0); }
+  34%  { opacity: 1; transform: translateY(0); }
+  58%  { transform: translateY(50px); }
+  88%  { opacity: 1; transform: translateY(95px); }
   100% { opacity: 0; transform: translateY(95px); }
 }
-.signal-h { opacity: 0; animation: send 6s linear infinite; }
-.signal-v { opacity: 0; animation: store 6s linear infinite; }
+.signal-h { opacity: 0; animation: pulse-h 5s cubic-bezier(0.77, 0, 0.175, 1) 1.2s infinite; }
+.signal-v { opacity: 0; animation: pulse-v 5s cubic-bezier(0.77, 0, 0.175, 1) 1.2s infinite; }
+
+/* Diagram panel slides in from right */
+@keyframes panel-in {
+  0%   { opacity: 0; transform: translateX(16px); }
+  42%  { opacity: 1; transform: translateX(-2px); }
+  100% { opacity: 1; transform: translateX(0); }
+}
+.diagram-panel { opacity: 0; animation: panel-in 0.55s cubic-bezier(0.23, 1, 0.32, 1) 0.5s forwards; }
+
+/* Reduced motion: keep opacity fades, drop all transforms */
 @media (prefers-reduced-motion: reduce) {
-  .signal-h, .signal-v { display: none; }
+  .signal-h, .signal-v, .cursor { display: none; }
+  .name-1, .name-2, .tagline { animation: none; opacity: 1; }
+  .node-1, .node-2, .node-3, .node-4 { animation: none; opacity: 1; }
+  .diagram-panel { animation: none; opacity: 1; }
 }
 </style>
 
@@ -29,30 +79,32 @@
 
 <text x="48" y="157" font-size="18" letter-spacing="3" fill="#75e2b8">SOFTWARE ENGINEER</text>
 <g fill="#edf4ef" font-size="73" font-weight="800" letter-spacing="-3">
-  <text x="43" y="246">SHREYASH</text>
-  <text x="43" y="323">SHUKLA<tspan fill="#75e2b8">.</tspan></text>
+  <text class="name-1" x="43" y="246">SHREYASH</text>
+  <text class="name-2" x="43" y="323">SHUKLA<tspan fill="#75e2b8">.</tspan></text>
 </g>
-<text x="47" y="392" font-size="13" fill="#9baeb0">CLOUD SYSTEMS  /  FULL-STACK PRODUCTS  /  APPLIED AI</text>
+<rect class="cursor" x="44" y="333" width="4" height="26" rx="2" fill="#75e2b8"/>
+<text class="tagline" x="47" y="392" font-size="13" fill="#9baeb0">CLOUD SYSTEMS  /  FULL-STACK PRODUCTS  /  APPLIED AI</text>
 
-<rect x="555" y="91" width="405" height="250" rx="14" fill="#111a22" stroke="#2c3a43"/>
-<text x="576" y="123" font-size="12" font-weight="700" fill="#75e2b8">SERVERLESS WORKFLOW</text>
-<text x="938" y="123" font-size="11" fill="#9baeb0" text-anchor="end">REQUEST / RESPONSE</text>
-<path d="M605 183 H901 M751 183 V278" fill="none" stroke="#49605f" stroke-width="2"/>
-<path d="M897 179 L903 183 L897 187 M747 273 L751 279 L755 273" fill="none" stroke="#75e2b8" stroke-width="2"/>
+<g class="diagram-panel">
+  <rect x="555" y="91" width="405" height="250" rx="14" fill="#111a22" stroke="#2c3a43"/>
+  <text x="576" y="123" font-size="12" font-weight="700" fill="#75e2b8">SERVERLESS WORKFLOW</text>
+  <text x="938" y="123" font-size="11" fill="#9baeb0" text-anchor="end">REQUEST / RESPONSE</text>
+  <path d="M605 183 H901 M751 183 V278" fill="none" stroke="#49605f" stroke-width="2"/>
+  <path d="M897 179 L903 183 L897 187 M747 273 L751 279 L755 273" fill="none" stroke="#75e2b8" stroke-width="2"/>
+</g>
 <circle class="signal-h" cx="635" cy="183" r="5" fill="#75e2b8"/>
 <circle class="signal-v" cx="751" cy="183" r="5" fill="#75e2b8"/>
-
 <g fill="#0b1118" stroke="#75e2b8" stroke-width="2">
-  <rect x="584" y="162" width="70" height="42" rx="9"/>
-  <rect x="711" y="162" width="80" height="42" rx="9"/>
-  <rect x="863" y="162" width="76" height="42" rx="9"/>
-  <rect x="711" y="278" width="80" height="42" rx="9"/>
+  <rect class="node-1" x="584" y="162" width="70" height="42" rx="9"/>
+  <rect class="node-2" x="711" y="162" width="80" height="42" rx="9"/>
+  <rect class="node-3" x="863" y="162" width="76" height="42" rx="9"/>
+  <rect class="node-4" x="711" y="278" width="80" height="42" rx="9"/>
 </g>
 <g fill="#edf4ef" font-size="11" font-weight="700" text-anchor="middle">
-  <text x="619" y="188">CLIENT</text>
-  <text x="751" y="188">LAMBDA</text>
-  <text x="901" y="188">RESULT</text>
-  <text x="751" y="304">DATA</text>
+  <text class="node-1" x="619" y="188">CLIENT</text>
+  <text class="node-2" x="751" y="188">LAMBDA</text>
+  <text class="node-3" x="901" y="188">RESULT</text>
+  <text class="node-4" x="751" y="304">DATA</text>
 </g>
 <text x="576" y="332" font-size="11" fill="#9baeb0">TYPESCRIPT  /  AWS LAMBDA  /  DYNAMODB</text>
 </svg>

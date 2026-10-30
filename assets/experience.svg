@@ -1,4 +1,27 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 296" width="1000" height="296" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace"><title>Four financial tools shipped at Quicko</title><desc>PAN Verification, PAN–Aadhaar Link Checker, Tax Payment Checker, and e-Verify ITR.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 296" width="1000" height="296" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace"><title>Four financial tools shipped at Quicko</title><desc>PAN Verification, PAN–Aadhaar Link Checker, Tax Payment Checker, e-Verify ITR — cards stagger in.</desc>
+
+<style>
+@keyframes card-enter {
+  0%   { opacity: 0; transform: translateY(12px); }
+  45%  { opacity: 1; transform: translateY(-1px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+.ec1 { opacity: 0; animation: card-enter 0.4s cubic-bezier(0.23, 1, 0.32, 1) 0.10s forwards; }
+.ec2 { opacity: 0; animation: card-enter 0.4s cubic-bezier(0.23, 1, 0.32, 1) 0.17s forwards; }
+.ec3 { opacity: 0; animation: card-enter 0.4s cubic-bezier(0.23, 1, 0.32, 1) 0.24s forwards; }
+.ec4 { opacity: 0; animation: card-enter 0.4s cubic-bezier(0.23, 1, 0.32, 1) 0.31s forwards; }
+/* Status dot: state indication — "shipped" pulse. Subtle scale, ease-in-out. */
+@keyframes dot-pulse {
+  0%, 100% { transform: scale(1); opacity: 0.65; }
+  50%       { transform: scale(1.4); opacity: 1; }
+}
+.dot { animation: dot-pulse 3.5s cubic-bezier(0.77, 0, 0.175, 1) infinite; }
+@media (prefers-reduced-motion: reduce) {
+  .ec1, .ec2, .ec3, .ec4 { animation: none; opacity: 1; }
+  .dot { animation: none; opacity: 1; }
+}
+</style>
+
 <rect width="1000" height="296" rx="18" fill="#0b1118"/>
 <rect x="1" y="1" width="998" height="294" rx="17" fill="none" stroke="#2c3a43"/>
 <text x="42" y="51" font-size="13" font-weight="700" fill="#75e2b8">EXPERIENCE / QUICKO</text>
@@ -7,27 +30,39 @@
 <text x="42" y="111" font-size="24" font-weight="700" fill="#edf4ef">Four tools shipped to production.</text>
 <text x="42" y="135" font-size="12" fill="#9baeb0">Serverless APIs, data contracts, and infrastructure behind financial workflows.</text>
 
-<rect x="42" y="164" width="218" height="92" rx="12" fill="#111a22" stroke="#2c3a43"/>
-<text x="59" y="191" font-size="13" fill="#75e2b8">01</text>
-<text x="59" y="218" font-size="16" font-weight="700" fill="#edf4ef">PAN</text>
-<text x="59" y="239" font-size="15" fill="#9baeb0">Verification</text>
-<circle cx="233" cy="185" r="4" fill="#75e2b8"/>
+<g class="ec1">
+  <rect x="42" y="164" width="218" height="92" rx="12" fill="#111a22" stroke="#2c3a43"/>
+  <text x="59" y="191" font-size="13" fill="#75e2b8">01</text>
+  <text x="59" y="218" font-size="16" font-weight="700" fill="#edf4ef">PAN</text>
+  <text x="59" y="239" font-size="15" fill="#9baeb0">Verification</text>
+  <circle class="dot" cx="233" cy="185" r="4" fill="#75e2b8"
+          style="transform-origin: 233px 185px; animation-delay: 0.00s;"/>
+</g>
 
-<rect x="274" y="164" width="218" height="92" rx="12" fill="#111a22" stroke="#2c3a43"/>
-<text x="291" y="191" font-size="13" fill="#75e2b8">02</text>
-<text x="291" y="218" font-size="16" font-weight="700" fill="#edf4ef">PAN–Aadhaar</text>
-<text x="291" y="239" font-size="15" fill="#9baeb0">Link Checker</text>
-<circle cx="465" cy="185" r="4" fill="#75e2b8"/>
+<g class="ec2">
+  <rect x="274" y="164" width="218" height="92" rx="12" fill="#111a22" stroke="#2c3a43"/>
+  <text x="291" y="191" font-size="13" fill="#75e2b8">02</text>
+  <text x="291" y="218" font-size="16" font-weight="700" fill="#edf4ef">PAN–Aadhaar</text>
+  <text x="291" y="239" font-size="15" fill="#9baeb0">Link Checker</text>
+  <circle class="dot" cx="465" cy="185" r="4" fill="#75e2b8"
+          style="transform-origin: 465px 185px; animation-delay: 0.22s;"/>
+</g>
 
-<rect x="506" y="164" width="218" height="92" rx="12" fill="#111a22" stroke="#2c3a43"/>
-<text x="523" y="191" font-size="13" fill="#75e2b8">03</text>
-<text x="523" y="218" font-size="16" font-weight="700" fill="#edf4ef">Tax Payment</text>
-<text x="523" y="239" font-size="15" fill="#9baeb0">Checker</text>
-<circle cx="697" cy="185" r="4" fill="#75e2b8"/>
+<g class="ec3">
+  <rect x="506" y="164" width="218" height="92" rx="12" fill="#111a22" stroke="#2c3a43"/>
+  <text x="523" y="191" font-size="13" fill="#75e2b8">03</text>
+  <text x="523" y="218" font-size="16" font-weight="700" fill="#edf4ef">Tax Payment</text>
+  <text x="523" y="239" font-size="15" fill="#9baeb0">Checker</text>
+  <circle class="dot" cx="697" cy="185" r="4" fill="#75e2b8"
+          style="transform-origin: 697px 185px; animation-delay: 0.44s;"/>
+</g>
 
-<rect x="738" y="164" width="218" height="92" rx="12" fill="#111a22" stroke="#2c3a43"/>
-<text x="755" y="191" font-size="13" fill="#75e2b8">04</text>
-<text x="755" y="218" font-size="16" font-weight="700" fill="#edf4ef">e-Verify</text>
-<text x="755" y="239" font-size="15" fill="#9baeb0">ITR</text>
-<circle cx="929" cy="185" r="4" fill="#75e2b8"/>
+<g class="ec4">
+  <rect x="738" y="164" width="218" height="92" rx="12" fill="#111a22" stroke="#2c3a43"/>
+  <text x="755" y="191" font-size="13" fill="#75e2b8">04</text>
+  <text x="755" y="218" font-size="16" font-weight="700" fill="#edf4ef">e-Verify</text>
+  <text x="755" y="239" font-size="15" fill="#9baeb0">ITR</text>
+  <circle class="dot" cx="929" cy="185" r="4" fill="#75e2b8"
+          style="transform-origin: 929px 185px; animation-delay: 0.66s;"/>
+</g>
 </svg>
