@@ -67,7 +67,7 @@ public:
 
 <img src="assets/h-stack.svg" width="100%" alt="Tech stack" />
 
-<img src="assets/orbit.svg" width="100%" alt="Orbiting tech stack. Languages: Python, TypeScript, JavaScript, C++, Java, SQL, C. Frontend and backend: Next.js, React, Angular, Node.js, FastAPI, Express, Flask. Cloud, DevOps and databases: AWS, Terraform, Docker, Jenkins, PostgreSQL, MongoDB, MySQL, Linux. AI, ML and tools: Pandas, NumPy, Git, Jest, Postman." />
+<img src="assets/orbit.svg" width="100%" alt="Tech stack diagram. Languages: Python, TypeScript, JavaScript, C++, Java, SQL, C. Frontend and backend: Next.js, React, Angular, Node.js, FastAPI, Express, Flask. Cloud, DevOps and databases: AWS, Terraform, Docker, Jenkins, PostgreSQL, MongoDB, MySQL, Linux. AI, ML and tools: Pandas, NumPy, Git, Jest, Postman." />
 
 <img src="assets/divider.svg" width="100%" alt="" />
 
