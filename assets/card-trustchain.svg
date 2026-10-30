@@ -1,68 +1,77 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 490 250" width="490" height="250" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace"><title>TrustChain project</title><desc>A layered verification project and Breach 2025 runner-up.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 490 250" width="490" height="250" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace"><title>TrustChain project</title><desc>Connector line draws, then checkmarks reveal sequentially.</desc>
 <style>
 
-@keyframes check-reveal {
-  0%   { opacity: 0; transform: scale(0.93); }
-  45%  { opacity: 1; transform: scale(1.04); }
-  100% { opacity: 1; transform: scale(1); }
+/* Connector line draw: ease-out (information appears, completes quickly).
+   stroke-dashoffset 0 → full. One-shot with forwards. */
+@keyframes ld {
+  0%   { stroke-dashoffset: 108; opacity:0; }
+  12%  { opacity:0.5; }
+  100% { stroke-dashoffset: 0; opacity:0.5; }
 }
-@keyframes line-draw {
-  0%   { stroke-dashoffset: 108; opacity: 0; }
-  15%  { opacity: 1; }
-  80%  { stroke-dashoffset: 0; }
-  100% { stroke-dashoffset: 0; opacity: 1; }
+/* Checkmark reveal: scale(0.93)+opacity:0 → scale(1). ease-out. 80ms stagger. */
+@keyframes cr {
+  0%   { opacity:0; transform: scale(0.93); }
+  50%  { opacity:1; transform: scale(1.05); }
+  100% { opacity:1; transform: scale(1); }
 }
-.v1        { opacity: 0; animation: check-reveal 0.35s cubic-bezier(0.23, 1, 0.32, 1) 0.20s forwards; }
-.v2        { opacity: 0; animation: check-reveal 0.35s cubic-bezier(0.23, 1, 0.32, 1) 0.38s forwards; }
-.v3        { opacity: 0; animation: check-reveal 0.35s cubic-bezier(0.23, 1, 0.32, 1) 0.56s forwards; }
-.connector { stroke-dasharray: 108; stroke-dashoffset: 108; opacity: 0;
-  animation: line-draw 0.55s cubic-bezier(0.23, 1, 0.32, 1) 0.10s forwards; }
+.ldr { stroke-dasharray:108; stroke-dashoffset:108; opacity:0;
+  animation: ld 0.55s cubic-bezier(0.23,1,0.32,1) 0.10s forwards; }
+.v1 { opacity:0; animation: cr 0.32s cubic-bezier(0.23,1,0.32,1) 0.20s forwards; }
+.v2 { opacity:0; animation: cr 0.32s cubic-bezier(0.23,1,0.32,1) 0.38s forwards; }
+.v3 { opacity:0; animation: cr 0.32s cubic-bezier(0.23,1,0.32,1) 0.56s forwards; }
 
-/* Card title reveal: ease-out entrance, 400ms. Marketing budget. */
-@keyframes title-in {
-  0%   { opacity: 0; transform: translateY(8px); }
-  50%  { opacity: 1; transform: translateY(-1px); }
-  100% { opacity: 1; transform: translateY(0); }
+/* Title + subtitle: staggered ease-out reveal */
+@keyframes ti {
+  0%   { opacity:0; transform: translateY(7px); }
+  100% { opacity:1; transform: translateY(0); }
 }
-.card-title { opacity: 0; animation: title-in 0.4s cubic-bezier(0.23, 1, 0.32, 1) 0.05s forwards; }
-.card-kind  { opacity: 0; animation: title-in 0.4s cubic-bezier(0.23, 1, 0.32, 1) 0.13s forwards; }
+.ct { opacity:0; animation: ti 0.38s cubic-bezier(0.23,1,0.32,1) 0.06s forwards; }
+.ck { opacity:0; animation: ti 0.38s cubic-bezier(0.23,1,0.32,1) 0.14s forwards; }
 @media (prefers-reduced-motion: reduce) {
-  .moving { display: none; }
-  .connector { animation: none; stroke-dashoffset: 0; opacity: 0.4; }
-  .card-title, .card-kind { animation: none; opacity: 1; }
+  .moving,.flow { display: none; }
+  .ldr { animation: none; stroke-dashoffset: 0; opacity: 0.4; }
+  .ct,.ck { animation: none; opacity: 1; }
 }
 </style>
-<rect width="490" height="250" rx="15" fill="#0b1118"/>
-<rect x="1" y="1" width="488" height="248" rx="14" fill="none" stroke="#2c3a43"/>
-<rect x="23" y="28" width="5" height="18" rx="2.5" fill="#f4c97e"/>
-<text x="39" y="41" font-size="11" font-weight="700" fill="#f4c97e">02 / FEATURED PROJECT</text>
-<text class="card-title" x="25" y="98" font-size="28" font-weight="800" fill="#edf4ef">TrustChain</text>
-<text class="card-kind" x="25" y="125" font-size="12" fill="#9baeb0">Layered fraud prevention</text>
-<path d="M25 177 H465" stroke="#2c3a43"/>
-<text x="25" y="209" font-size="11" fill="#f4c97e">SOLIDITY  /  FASTAPI  /  VISION</text>
-<text x="25" y="230" font-size="11" fill="#9baeb0">OPEN PROJECT ↗</text>
 
-<path class="connector" d="M310 127 H418" fill="none" stroke="#f4c97e" stroke-width="1.5"/>
-<g fill="#0b1118" stroke="#f4c97e" stroke-width="2">
+<defs>
+  <pattern id="cdots" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+    <circle cx="0.5" cy="0.5" r="0.7" fill="#1e2d3d" opacity="0.5"/>
+  </pattern>
+</defs>
+
+<rect width="490" height="250" rx="15" fill="#080e15"/>
+<rect width="490" height="250" rx="15" fill="url(#cdots)"/>
+<rect x="1" y="1" width="488" height="248" rx="14" fill="none" stroke="#1e2d3d" stroke-width="1.5"/>
+
+<!-- accent bar -->
+<rect x="22" y="26" width="4" height="20" rx="2" fill="#d4a84b"/>
+<text x="36" y="40" font-size="9" font-weight="700" fill="#d4a84b" letter-spacing="2">02 / FEATURED PROJECT</text>
+
+<text class="ct" x="22" y="95" font-size="26" font-weight="800" fill="#dce8f0">TrustChain</text>
+<text class="ck" x="22" y="118" font-size="11" fill="#5a7282">Layered fraud prevention</text>
+<path d="M22 172 H468" stroke="#1e2d3d" stroke-width="1"/>
+<text x="22" y="203" font-size="10" fill="#d4a84b" letter-spacing="1">SOLIDITY  ·  FASTAPI  ·  VISION</text>
+<text x="22" y="224" font-size="10" fill="#5a7282">OPEN PROJECT ↗</text>
+
+<text x="280" y="170" font-size="9" fill="#d4a84b" font-weight="700" letter-spacing="2">VERIFY  ·  ATTEST  ·  TRUST</text>
+<path class="ldr" d="M310 127 H418" fill="none" stroke="#d4a84b" stroke-width="2"/>
+<g fill="#080e15" stroke="#d4a84b" stroke-width="2">
   <rect x="288" y="105" width="44" height="44" rx="10"/>
   <rect x="342" y="105" width="44" height="44" rx="10"/>
   <rect x="396" y="105" width="44" height="44" rx="10"/>
 </g>
-<g class="v1" fill="none" stroke="#f4c97e" stroke-width="3"
-   stroke-linecap="round" stroke-linejoin="round"
-   style="transform-origin: 310px 127px;">
-  <path d="M300 127 l7 7 12 -15"/>
+<g class="v1" fill="none" stroke="#d4a84b" stroke-width="3"
+   stroke-linecap="round" stroke-linejoin="round" style="transform-origin:310px 127px;">
+  <path d="M299 127 l7 7 12-15"/>
 </g>
-<g class="v2" fill="none" stroke="#f4c97e" stroke-width="3"
-   stroke-linecap="round" stroke-linejoin="round"
-   style="transform-origin: 364px 127px;">
-  <path d="M354 127 l7 7 12 -15"/>
+<g class="v2" fill="none" stroke="#d4a84b" stroke-width="3"
+   stroke-linecap="round" stroke-linejoin="round" style="transform-origin:364px 127px;">
+  <path d="M353 127 l7 7 12-15"/>
 </g>
-<g class="v3" fill="none" stroke="#f4c97e" stroke-width="3"
-   stroke-linecap="round" stroke-linejoin="round"
-   style="transform-origin: 418px 127px;">
-  <path d="M408 127 l7 7 12 -15"/>
+<g class="v3" fill="none" stroke="#d4a84b" stroke-width="3"
+   stroke-linecap="round" stroke-linejoin="round" style="transform-origin:418px 127px;">
+  <path d="M407 127 l7 7 12-15"/>
 </g>
-<text x="306" y="170" font-size="11" fill="#f4c97e">VERIFY  /  ATTEST  /  TRUST</text>
 
 </svg>

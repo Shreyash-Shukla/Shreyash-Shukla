@@ -1,68 +1,95 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 296" width="1000" height="296" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace"><title>Four financial tools shipped at Quicko</title><desc>PAN Verification, PAN–Aadhaar Link Checker, Tax Payment Checker, e-Verify ITR — cards stagger in.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 296" width="1000" height="296" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace"><title>Four financial tools shipped at Quicko</title><desc>Cards stagger in with ease-out. Connector line draws between them. Status dots pulse.</desc>
 
 <style>
-@keyframes card-enter {
-  0%   { opacity: 0; transform: translateY(12px); }
-  45%  { opacity: 1; transform: translateY(-1px); }
-  100% { opacity: 1; transform: translateY(0); }
+/* Card stagger entrance — translateY(14px) + opacity:0 → settled.
+   ease-out baked at 45% keyframe. 70ms stagger between cards. */
+@keyframes ce {
+  0%   { opacity:0; transform: translateY(14px); }
+  45%  { opacity:1; transform: translateY(-1px); }
+  100% { opacity:1; transform: translateY(0); }
 }
-.ec1 { opacity: 0; animation: card-enter 0.4s cubic-bezier(0.23, 1, 0.32, 1) 0.10s forwards; }
-.ec2 { opacity: 0; animation: card-enter 0.4s cubic-bezier(0.23, 1, 0.32, 1) 0.17s forwards; }
-.ec3 { opacity: 0; animation: card-enter 0.4s cubic-bezier(0.23, 1, 0.32, 1) 0.24s forwards; }
-.ec4 { opacity: 0; animation: card-enter 0.4s cubic-bezier(0.23, 1, 0.32, 1) 0.31s forwards; }
-/* Status dot: state indication — "shipped" pulse. Subtle scale, ease-in-out. */
-@keyframes dot-pulse {
-  0%, 100% { transform: scale(1); opacity: 0.65; }
-  50%       { transform: scale(1.4); opacity: 1; }
+.ec1 { opacity:0; animation: ce 0.38s cubic-bezier(0.23,1,0.32,1) 0.08s forwards; }
+.ec2 { opacity:0; animation: ce 0.38s cubic-bezier(0.23,1,0.32,1) 0.15s forwards; }
+.ec3 { opacity:0; animation: ce 0.38s cubic-bezier(0.23,1,0.32,1) 0.22s forwards; }
+.ec4 { opacity:0; animation: ce 0.38s cubic-bezier(0.23,1,0.32,1) 0.29s forwards; }
+
+/* Status dot: scale pulse — state indication ("shipped/live").
+   ease-in-out for on-screen movement. 3.4s loop. Subtle (1→1.5). */
+@keyframes dp {
+  0%, 100% { transform: scale(1); opacity: 0.55; }
+  50%       { transform: scale(1.5); opacity: 1; }
 }
-.dot { animation: dot-pulse 3.5s cubic-bezier(0.77, 0, 0.175, 1) infinite; }
+.dp { animation: dp 3.4s cubic-bezier(0.77,0,0.175,1) infinite; }
+
+/* Connector line drawing between cards */
+@keyframes ld {
+  0%   { stroke-dashoffset: 696; opacity: 0; }
+  10%  { opacity: 0.5; }
+  100% { stroke-dashoffset: 0; opacity: 0.5; }
+}
+.conn { stroke-dasharray: 696; stroke-dashoffset: 696; opacity: 0;
+        animation: ld 0.7s cubic-bezier(0.23,1,0.32,1) 0.08s forwards; }
+
 @media (prefers-reduced-motion: reduce) {
-  .ec1, .ec2, .ec3, .ec4 { animation: none; opacity: 1; }
-  .dot { animation: none; opacity: 1; }
+  .ec1,.ec2,.ec3,.ec4 { animation: none; opacity: 1; }
+  .dp { animation: none; opacity: 0.8; }
+  .conn { animation: none; stroke-dashoffset: 0; opacity: 0.4; }
 }
 </style>
 
-<rect width="1000" height="296" rx="18" fill="#0b1118"/>
-<rect x="1" y="1" width="998" height="294" rx="17" fill="none" stroke="#2c3a43"/>
-<text x="42" y="51" font-size="13" font-weight="700" fill="#75e2b8">EXPERIENCE / QUICKO</text>
-<text x="958" y="51" font-size="12" fill="#9baeb0" text-anchor="end">MAY–JUNE 2026  ·  AHMEDABAD</text>
-<path d="M42 69 H958" stroke="#2c3a43"/>
-<text x="42" y="111" font-size="24" font-weight="700" fill="#edf4ef">Four tools shipped to production.</text>
-<text x="42" y="135" font-size="12" fill="#9baeb0">Serverless APIs, data contracts, and infrastructure behind financial workflows.</text>
+<defs>
+  <pattern id="edots" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
+    <circle cx="0.5" cy="0.5" r="0.8" fill="#1e2d3d" opacity="0.5"/>
+  </pattern>
+</defs>
+
+<rect width="1000" height="296" rx="18" fill="#080e15"/>
+<rect width="1000" height="296" rx="18" fill="url(#edots)"/>
+<rect x="1" y="1" width="998" height="294" rx="17" fill="none" stroke="#1e2d3d" stroke-width="1.5"/>
+
+<text x="42" y="47" font-size="10" font-weight="700" fill="#5ecba1" letter-spacing="2">EXPERIENCE / QUICKO</text>
+<text x="958" y="47" font-size="10" fill="#5a7282" text-anchor="end" letter-spacing="1">MAY–JUNE 2026  ·  AHMEDABAD</text>
+<path d="M42 58 H958" stroke="#1e2d3d" stroke-width="1"/>
+
+<text x="42" y="98" font-size="22" font-weight="700" fill="#dce8f0">Four tools shipped to production.</text>
+<text x="42" y="119" font-size="11" fill="#5a7282">Serverless APIs · data contracts · AWS infrastructure · financial workflows.</text>
+
+<!-- Connector line drawn between card top edges -->
+<path class="conn" d="M151 164 H260 M393 164 H502 M625 164 H734" fill="none" stroke="#5ecba1" stroke-width="1"/>
 
 <g class="ec1">
-  <rect x="42" y="164" width="218" height="92" rx="12" fill="#111a22" stroke="#2c3a43"/>
-  <text x="59" y="191" font-size="13" fill="#75e2b8">01</text>
-  <text x="59" y="218" font-size="16" font-weight="700" fill="#edf4ef">PAN</text>
-  <text x="59" y="239" font-size="15" fill="#9baeb0">Verification</text>
-  <circle class="dot" cx="233" cy="185" r="4" fill="#75e2b8"
-          style="transform-origin: 233px 185px; animation-delay: 0.00s;"/>
+  <rect x="42" y="148" width="210" height="110" rx="12" fill="#0d1520" stroke="#1e2d3d" stroke-width="1.5"/>
+  <text x="56" y="172" font-size="10" fill="#5ecba1" font-weight="700" letter-spacing="1">01</text>
+  <text x="56" y="200" font-size="16" font-weight="700" fill="#dce8f0">PAN</text>
+  <text x="56" y="222" font-size="13" fill="#5a7282">Verification</text>
+  <circle class="dp" cx="228" cy="166" r="3.5" fill="#5ecba1"
+          style="transform-origin:228px 166px; animation-delay:0.00s;"/>
 </g>
 
 <g class="ec2">
-  <rect x="274" y="164" width="218" height="92" rx="12" fill="#111a22" stroke="#2c3a43"/>
-  <text x="291" y="191" font-size="13" fill="#75e2b8">02</text>
-  <text x="291" y="218" font-size="16" font-weight="700" fill="#edf4ef">PAN–Aadhaar</text>
-  <text x="291" y="239" font-size="15" fill="#9baeb0">Link Checker</text>
-  <circle class="dot" cx="465" cy="185" r="4" fill="#75e2b8"
-          style="transform-origin: 465px 185px; animation-delay: 0.22s;"/>
+  <rect x="274" y="148" width="210" height="110" rx="12" fill="#0d1520" stroke="#1e2d3d" stroke-width="1.5"/>
+  <text x="288" y="172" font-size="10" fill="#5ecba1" font-weight="700" letter-spacing="1">02</text>
+  <text x="288" y="200" font-size="16" font-weight="700" fill="#dce8f0">PAN-Aadhaar</text>
+  <text x="288" y="222" font-size="13" fill="#5a7282">Link Checker</text>
+  <circle class="dp" cx="460" cy="166" r="3.5" fill="#5ecba1"
+          style="transform-origin:460px 166px; animation-delay:0.22s;"/>
 </g>
 
 <g class="ec3">
-  <rect x="506" y="164" width="218" height="92" rx="12" fill="#111a22" stroke="#2c3a43"/>
-  <text x="523" y="191" font-size="13" fill="#75e2b8">03</text>
-  <text x="523" y="218" font-size="16" font-weight="700" fill="#edf4ef">Tax Payment</text>
-  <text x="523" y="239" font-size="15" fill="#9baeb0">Checker</text>
-  <circle class="dot" cx="697" cy="185" r="4" fill="#75e2b8"
-          style="transform-origin: 697px 185px; animation-delay: 0.44s;"/>
+  <rect x="506" y="148" width="210" height="110" rx="12" fill="#0d1520" stroke="#1e2d3d" stroke-width="1.5"/>
+  <text x="520" y="172" font-size="10" fill="#5ecba1" font-weight="700" letter-spacing="1">03</text>
+  <text x="520" y="200" font-size="16" font-weight="700" fill="#dce8f0">Tax Payment</text>
+  <text x="520" y="222" font-size="13" fill="#5a7282">Checker</text>
+  <circle class="dp" cx="692" cy="166" r="3.5" fill="#5ecba1"
+          style="transform-origin:692px 166px; animation-delay:0.44s;"/>
 </g>
 
 <g class="ec4">
-  <rect x="738" y="164" width="218" height="92" rx="12" fill="#111a22" stroke="#2c3a43"/>
-  <text x="755" y="191" font-size="13" fill="#75e2b8">04</text>
-  <text x="755" y="218" font-size="16" font-weight="700" fill="#edf4ef">e-Verify</text>
-  <text x="755" y="239" font-size="15" fill="#9baeb0">ITR</text>
-  <circle class="dot" cx="929" cy="185" r="4" fill="#75e2b8"
-          style="transform-origin: 929px 185px; animation-delay: 0.66s;"/>
+  <rect x="738" y="148" width="210" height="110" rx="12" fill="#0d1520" stroke="#1e2d3d" stroke-width="1.5"/>
+  <text x="752" y="172" font-size="10" fill="#5ecba1" font-weight="700" letter-spacing="1">04</text>
+  <text x="752" y="200" font-size="16" font-weight="700" fill="#dce8f0">e-Verify</text>
+  <text x="752" y="222" font-size="13" fill="#5a7282">ITR</text>
+  <circle class="dp" cx="924" cy="166" r="3.5" fill="#5ecba1"
+          style="transform-origin:924px 166px; animation-delay:0.66s;"/>
 </g>
 </svg>
