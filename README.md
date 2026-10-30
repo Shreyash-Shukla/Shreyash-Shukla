@@ -1,35 +1,46 @@
-# Shreyash Shukla
+<div align="center">
+  <img src="assets/hero.svg" width="100%" alt="Shreyash Shukla — software engineer building cloud systems, full-stack products, and applied AI." />
+  <br /><br />
+  <a href="https://shreyashshukla.vercel.app/">Portfolio</a> &nbsp;·&nbsp;
+  <a href="https://www.linkedin.com/in/shreyash-shukla-6a3b5a309/">LinkedIn</a> &nbsp;·&nbsp;
+  <a href="mailto:shreyash.shukla.dev@gmail.com">Email</a> &nbsp;·&nbsp;
+  <a href="https://leetcode.com/u/shreyash_shukla">LeetCode</a> &nbsp;·&nbsp;
+  <a href="https://codeforces.com/profile/shreyash.ext">Codeforces</a>
+</div>
 
-I build cloud backends, full-stack products, and applied AI systems. I'm a computer science undergraduate at Pandit Deendayal Energy University, graduating in 2027, and a former software engineering intern at Quicko.
-
-Gandhinagar, India · [Portfolio](https://shreyashshukla.vercel.app/) · [LinkedIn](https://www.linkedin.com/in/shreyash-shukla-6a3b5a309/) · [Email](mailto:shreyash.shukla.dev@gmail.com) · [LeetCode](https://leetcode.com/u/shreyash_shukla) · [Codeforces](https://codeforces.com/profile/shreyash.ext)
+I study Computer Science at PDEU (class of 2027). My work spans serverless backends, full-stack products, and applied machine learning. I like building things that move from an idea to a working product.
 
 ## Experience
 
-**Software Engineering Intern, [Quicko](https://quicko.com)** · May–June 2026 · Ahmedabad, India
+<img src="assets/experience.svg" width="100%" alt="Four financial tools shipped during my software engineering internship at Quicko." />
 
-- Shipped four financial tools: [PAN Verification](https://quicko.com/tools/verify-pan-details), [PAN–Aadhaar Link Checker](https://quicko.com/tools/check-pan-aadhaar-link-status), [Tax Payment Checker](https://quicko.com/tools/check-tax-payment-status), and [e-Verify ITR](https://quicko.com/tools/e-verify-itr).
-- Built serverless APIs with TypeScript, Node.js, AWS Lambda, and DynamoDB. Defined contracts with OpenAPI and JSON Schema, and provisioned infrastructure with Terraform.
+**Software Engineering Intern, [Quicko](https://quicko.com)** · May–June 2026 · Ahmedabad
 
-## Selected projects
+- Shipped [PAN Verification](https://quicko.com/tools/verify-pan-details), [PAN–Aadhaar Link Checker](https://quicko.com/tools/check-pan-aadhaar-link-status), [Tax Payment Checker](https://quicko.com/tools/check-tax-payment-status), and [e-Verify ITR](https://quicko.com/tools/e-verify-itr).
+- Built serverless APIs with TypeScript, Node.js, AWS Lambda, and DynamoDB. Defined contracts with OpenAPI and JSON Schema and provisioned infrastructure with Terraform.
 
-- **[FraudShield](https://github.com/Shreyash-Shukla/FraudShield)** — Transaction fraud detection combining machine learning, graph analysis, and an explanation layer. First place at HackNUthon 6.0.
-- **[TrustChain](https://github.com/Shreyash-Shukla/TrustChain)** — Multi-layer fraud prevention using blockchain and computer vision. Second place at Breach 2025.
-- **[DAGent](https://github.com/Shreyash-Shukla/DAGent)** — Workflow orchestration for AI agents and MCP tools, built with Next.js and TypeScript.
-- **[DriveMesh](https://github.com/Shreyash-Shukla/DriveMesh)** — Distributed, encrypted cloud storage built with Python and Flask.
+## Featured projects
 
-## Skills
+<table>
+  <tr>
+    <td width="50%"><a href="https://github.com/Shreyash-Shukla/FraudShield"><img src="assets/card-fraudshield.svg" width="100%" alt="FraudShield — graph-based fraud detection. First place at HackNUthon 6.0." /></a></td>
+    <td width="50%"><a href="https://github.com/Shreyash-Shukla/TrustChain"><img src="assets/card-trustchain.svg" width="100%" alt="TrustChain — layered fraud prevention. Second place at Breach 2025." /></a></td>
+  </tr>
+  <tr>
+    <td width="50%"><a href="https://github.com/Shreyash-Shukla/DAGent"><img src="assets/card-dagent.svg" width="100%" alt="DAGent — AI agent workflow orchestration." /></a></td>
+    <td width="50%"><a href="https://github.com/Shreyash-Shukla/DriveMesh"><img src="assets/card-drivemesh.svg" width="100%" alt="DriveMesh — encrypted distributed cloud storage." /></a></td>
+  </tr>
+</table>
 
-| Area | Tools |
-| --- | --- |
-| Languages | Python, TypeScript, JavaScript, C++, Java, SQL |
-| Backend and web | Node.js, Next.js, React, FastAPI, Express, Flask |
-| Cloud and data | AWS, Terraform, Docker, PostgreSQL, MongoDB, MySQL |
-| ML and testing | Pandas, NumPy, Jest |
+## Toolbox
 
-## Highlights
+| Languages | Backend and web | Infrastructure and data |
+| --- | --- | --- |
+| Python, TypeScript, JavaScript, C++, Java, SQL | Node.js, Next.js, React, FastAPI, Express, Flask | AWS, Terraform, Docker, PostgreSQL, MongoDB, MySQL |
 
-- LeetCode Knight; qualified GATE, JEE Main, and JEE Advanced.
-- CGPA: **9.72/10** at PDEU; Government of Gujarat Merit Scholarship.
-- NPTEL certification in Entrepreneurship & Incubation from IIT Bombay.
+## Beyond the work
+
+- First place at HackNUthon 6.0; second place at Breach 2025.
+- LeetCode Knight; GATE qualified; 9.72/10 CGPA at PDEU.
+- Government of Gujarat Merit Scholarship and NPTEL certification from IIT Bombay.
 - Volunteer work in education and bird conservation.

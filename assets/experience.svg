@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 296" width="1000" height="296" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace"><title>Four financial tools shipped at Quicko</title><desc>PAN Verification, PAN–Aadhaar Link Checker, Tax Payment Checker, and e-Verify ITR.</desc>
+<rect width="1000" height="296" rx="18" fill="#0b1118"/>
+<rect x="1" y="1" width="998" height="294" rx="17" fill="none" stroke="#2c3a43"/>
+<text x="42" y="51" font-size="13" font-weight="700" fill="#75e2b8">EXPERIENCE / QUICKO</text>
+<text x="958" y="51" font-size="12" fill="#9baeb0" text-anchor="end">MAY–JUNE 2026  ·  AHMEDABAD</text>
+<path d="M42 69 H958" stroke="#2c3a43"/>
+<text x="42" y="111" font-size="24" font-weight="700" fill="#edf4ef">Four tools shipped to production.</text>
+<text x="42" y="135" font-size="12" fill="#9baeb0">Serverless APIs, data contracts, and infrastructure behind financial workflows.</text>
+
+<rect x="42" y="164" width="218" height="92" rx="12" fill="#111a22" stroke="#2c3a43"/>
+<text x="59" y="191" font-size="13" fill="#75e2b8">01</text>
+<text x="59" y="218" font-size="16" font-weight="700" fill="#edf4ef">PAN</text>
+<text x="59" y="239" font-size="15" fill="#9baeb0">Verification</text>
+<circle cx="233" cy="185" r="4" fill="#75e2b8"/>
+
+<rect x="274" y="164" width="218" height="92" rx="12" fill="#111a22" stroke="#2c3a43"/>
+<text x="291" y="191" font-size="13" fill="#75e2b8">02</text>
+<text x="291" y="218" font-size="16" font-weight="700" fill="#edf4ef">PAN–Aadhaar</text>
+<text x="291" y="239" font-size="15" fill="#9baeb0">Link Checker</text>
+<circle cx="465" cy="185" r="4" fill="#75e2b8"/>
+
+<rect x="506" y="164" width="218" height="92" rx="12" fill="#111a22" stroke="#2c3a43"/>
+<text x="523" y="191" font-size="13" fill="#75e2b8">03</text>
+<text x="523" y="218" font-size="16" font-weight="700" fill="#edf4ef">Tax Payment</text>
+<text x="523" y="239" font-size="15" fill="#9baeb0">Checker</text>
+<circle cx="697" cy="185" r="4" fill="#75e2b8"/>
+
+<rect x="738" y="164" width="218" height="92" rx="12" fill="#111a22" stroke="#2c3a43"/>
+<text x="755" y="191" font-size="13" fill="#75e2b8">04</text>
+<text x="755" y="218" font-size="16" font-weight="700" fill="#edf4ef">e-Verify</text>
+<text x="755" y="239" font-size="15" fill="#9baeb0">ITR</text>
+<circle cx="929" cy="185" r="4" fill="#75e2b8"/>
+</svg>

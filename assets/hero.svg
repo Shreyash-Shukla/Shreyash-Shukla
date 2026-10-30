@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 430" width="1000" height="430" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, 'Liberation Mono', monospace"><title>Shreyash Shukla — Software Engineer</title><desc>A self-contained engineering-themed banner with a restrained animated system flow.</desc>
+
+<style>
+@keyframes send {
+  0% { opacity: 0; transform: translateX(0); }
+  9% { opacity: 1; }
+  88% { opacity: 1; }
+  100% { opacity: 0; transform: translateX(218px); }
+}
+@keyframes store {
+  0%, 28% { opacity: 0; transform: translateY(0); }
+  36%, 82% { opacity: 1; }
+  100% { opacity: 0; transform: translateY(95px); }
+}
+.signal-h { opacity: 0; animation: send 6s linear infinite; }
+.signal-v { opacity: 0; animation: store 6s linear infinite; }
+@media (prefers-reduced-motion: reduce) {
+  .signal-h, .signal-v { display: none; }
+}
+</style>
+
+<rect width="1000" height="430" rx="18" fill="#0b1118"/>
+<rect x="1" y="1" width="998" height="428" rx="17" fill="none" stroke="#2c3a43"/>
+<path d="M40 68 H960 M40 365 H960" stroke="#2c3a43"/>
+<path d="M532 68 V365" stroke="#2c3a43"/>
+<rect x="40" y="42" width="8" height="8" rx="2" fill="#75e2b8"/>
+<text x="58" y="50" font-size="13" font-weight="700" fill="#75e2b8">CODE IT. SHIP IT. IMPROVE IT.</text>
+<text x="960" y="50" font-size="12" fill="#9baeb0" text-anchor="end">GANDHINAGAR, INDIA  ·  CSE '27</text>
+
+<text x="48" y="157" font-size="18" letter-spacing="3" fill="#75e2b8">SOFTWARE ENGINEER</text>
+<g fill="#edf4ef" font-size="73" font-weight="800" letter-spacing="-3">
+  <text x="43" y="246">SHREYASH</text>
+  <text x="43" y="323">SHUKLA<tspan fill="#75e2b8">.</tspan></text>
+</g>
+<text x="47" y="392" font-size="13" fill="#9baeb0">CLOUD SYSTEMS  /  FULL-STACK PRODUCTS  /  APPLIED AI</text>
+
+<rect x="555" y="91" width="405" height="250" rx="14" fill="#111a22" stroke="#2c3a43"/>
+<text x="576" y="123" font-size="12" font-weight="700" fill="#75e2b8">SERVERLESS WORKFLOW</text>
+<text x="938" y="123" font-size="11" fill="#9baeb0" text-anchor="end">REQUEST / RESPONSE</text>
+<path d="M605 183 H901 M751 183 V278" fill="none" stroke="#49605f" stroke-width="2"/>
+<path d="M897 179 L903 183 L897 187 M747 273 L751 279 L755 273" fill="none" stroke="#75e2b8" stroke-width="2"/>
+<circle class="signal-h" cx="635" cy="183" r="5" fill="#75e2b8"/>
+<circle class="signal-v" cx="751" cy="183" r="5" fill="#75e2b8"/>
+
+<g fill="#0b1118" stroke="#75e2b8" stroke-width="2">
+  <rect x="584" y="162" width="70" height="42" rx="9"/>
+  <rect x="711" y="162" width="80" height="42" rx="9"/>
+  <rect x="863" y="162" width="76" height="42" rx="9"/>
+  <rect x="711" y="278" width="80" height="42" rx="9"/>
+</g>
+<g fill="#edf4ef" font-size="11" font-weight="700" text-anchor="middle">
+  <text x="619" y="188">CLIENT</text>
+  <text x="751" y="188">LAMBDA</text>
+  <text x="901" y="188">RESULT</text>
+  <text x="751" y="304">DATA</text>
+</g>
+<text x="576" y="332" font-size="11" fill="#9baeb0">TYPESCRIPT  /  AWS LAMBDA  /  DYNAMODB</text>
+</svg>
